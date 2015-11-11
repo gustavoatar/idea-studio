@@ -1,0 +1,354 @@
+/* body background */
+body {
+  background: #add9e4;
+  background: -moz-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a32d7f), color-stop(100%, #4f2d7f));
+  background: -webkit-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -o-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -ms-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background-color: #4f2d7f;
+  color: #fff;   
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+html, body {
+	font-family: 'DINNextRoundedLTPro-Light', sans-serif;	
+}
+
+p { font-size: 1.4em;  line-height: 1.2em;}
+
+h1 { font-size: 2.4em; line-height: 2em; }
+
+h2 { font-size: 2em; line-height: 1.6em; }
+
+h3 { font-size: 1.6em; line-height: 1.4em; }
+
+h1, h2, h3 {
+    font-family: 'DINNextRoundedLTPro-Bold', sans-serif;	
+}
+
+h4, h5, h6 {
+		font-family: 'DINNextRoundedLTPro-Medium', sans-serif;
+}
+
+.purple-text { color: #4f2d7f; }
+
+p {
+	font-family: 'DINNextRoundedLTPro-Light', sans-serif;	
+}
+
+p.lead {
+	font-size: 1.6em; 
+}
+
+.img-responsive {
+	max-width: 100%; height: auto; display: block;
+}
+
+/***************
+ * Intro Panel *
+ ***************/
+ 
+ 
+#story-one {
+	color : #000;
+	background: #fff;
+}
+
+#story-one #logo {
+	margin : 20px 0 50px 0;
+}
+
+#story-one ul li {
+	margin    : 16px 0;
+}
+
+#story-one ul {
+	padding : 0px;
+}
+
+/***************
+ * two Panel *
+ ***************/
+#story-two {
+	color      : #FFF;
+	background : #022639;
+	text-shadow : 1px 1px 1px #000;	
+}
+
+/*********************
+ * Ultrabook Project *
+ *********************/
+#story-three {
+	color      : #fff;
+	background : #000;
+	text-shadow : 1px 1px 1px #000;
+}
+
+
+
+#story-three .bg.start{
+	left  : -180%;
+	right : auto;
+	opacity: 0;
+}
+#story-three .bg.to{
+
+	right : auto;
+	opacity: 1;
+}
+
+#story-three .bg.end{
+	opacity: 0;
+}
+
+
+/**************
+ * four Panel *
+ **************/
+#story-four {
+	color       : #FFF;
+	text-shadow : 1px 1px 1px #000;
+	background  : #C9BC33;
+}
+
+#story-four .logo {
+	position : absolute;
+	right    : 20%;
+	bottom   : 50%;
+}
+
+#story-four .logo.start {
+	bottom : 190%;
+}
+
+#story-four .logo.end {
+	bottom : -90%;
+}
+
+/**************
+ * Animated *
+ **************/
+#story-five {
+	color      : #fff;
+	background : #000;
+}
+
+#story-five .logo {
+	position : absolute;
+	right    : 0%;
+	bottom   : 30%;
+}
+
+#story-five .logo.start {
+	bottom : 170%;
+}
+
+#story-five .logo.end {
+	bottom : -210%;
+}
+
+#story-five ul.slide {
+	display     : block;
+	position    : absolute; 
+	white-space : nowrap;
+	left        : -1426px;
+}
+
+#story-five ul.slide.start {
+	left : -1425px;
+}
+
+#story-five ul.slide li {
+	display : inline;
+}
+
+#story-five ul.slide-1.start { opacity : 0; }
+#story-five ul.slide-2.start { opacity : 0; }
+#story-five ul.slide-3.start { opacity : 0; }
+
+#story-five ul.slide-1 {
+	bottom : 0px;
+}
+
+#story-five ul.slide-2, #story-five ul.slide-2.to {
+	bottom : 176px;
+	left   : -1425px;
+}
+
+#story-five ul.slide-2.start {
+	left : -1426px;
+}
+
+#story-five ul.slide-3 {
+	bottom : 352px;
+}
+
+
+#story-five ul.slide-1.to, #story-five ul.slide-3.to {
+	left : -1425px;
+}
+
+#story-five ul.slide-1.end {
+	right : 0px;
+	left  : auto;
+}
+
+#story-five ul.slide-3.end {
+	right : 1200px;
+	left  : auto;
+}
+
+
+#story-five ul.slide-2.to {
+	right : 0px;
+}
+
+#story-five ul.slide-2.end {
+	left : 200px;
+}
+
+/* Navigation */
+/* Side Nav */
+ul#nav {
+	position : fixed;
+	left     : 1%;
+	top      : 20%;
+	z-index  : 999;
+	background: #fff;
+	border-radius: 8px;
+	padding: 8px; 
+}
+
+ul#nav li {
+	height   : 20px;
+	position : relative;
+}
+
+ul#nav a {
+	display     : block;
+	width       : 10px;
+	height      : 20px;
+	background  : url('../images/grey-dot.png') 0 100% no-repeat;
+	text-indent : -9000px;
+	overflow    : hidden;
+	outline     : none;
+}
+
+ul#nav a:hover, nav#main li.active a {
+	background : url('../images/grey-pink-dot.png') 0 100% no-repeat;
+}
+
+ul#nav h1 {
+	opacity     : .5;
+	position    : absolute;
+	left        : 15px;
+	top         : 0px;
+	white-space : nowrap;
+	padding     : 0 0 0 18px;
+	overflow    : hidden;
+	margin      : 0;
+	font-size   : 16px;
+	color: #4f2d7f;
+}
+
+ul#nav span {
+	display            : block;
+	padding            : 4px 8px;
+}
+
+/*  Responsive Queries */
+/* ----------- iPhones, Galaxy, HTC Phones Combined ----------- */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-height: 736px)  {
+	  
+	section .story {
+		width: 100%;
+		padding: 28px;	
+		box-sizing: border-box;
+	}	  
+	  
+	section {
+		min-height : 500px;
+		min-height : 100%;
+		width      : 100%;
+	}
+}
+
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}

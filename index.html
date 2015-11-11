@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Parallax Demo</title>
+
+	<link href="css/reset.css"  rel="stylesheet" type="text/css" />
+	<link href="css/chrome.css" rel="stylesheet" type="text/css" />
+	<link href="css/demo1.css"     rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/din-next.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="js/side-nav.js"    ></script>
+	<script type="text/javascript" src="js/backgrounds.js" ></script>
+	<script type="text/javascript" src="js/kinetics.js"    ></script>
+
+	<!-- parallax.js really screws with the DOM, so make sure it's included last so other things don't notice :) -->
+	<script type="text/javascript" src="js/parallax.js" ></script>
+</head>
+<body>
+	<!-- this is to make the page's vertical scrollbar appear the correct height -->
+	<div id="mock-scroller"></div>
+	<ul id="nav"></ul>
+
+	<div id="content">
+		<section id="story-one" data-nav="1">
+			<div class="story">
+				<div id="logo">
+					<img src="images/mrm-logo.svg" height="36" width="276">
+				</div>
+
+				<h1>Idea Studio is...</h1>
+                <h2>Creative. Collaborative. Combustive.</h2>
+                <p class="lead">Idea Studio is a new and innovative way of collaborating. It brings bright minds together. Lets them loose. And generates problem-solving ideas. It’s done through a series of rapid ideation sessions. The basic premise is simple: Sketch. Pitch. Critique. Rinse and repeat. You’ll see sparks fly and ideas ignite.</p>
+                <img src="images/idea-studio.png" width="2784" height="511" class="img-responsive" />
+			</div>
+            
+		</section>
+
+
+		<section id="story-two" data-nav="2">
+			<img class="bg animate" src="images/IMG_7713.JPG" anim-detached="true" />
+			<div class="story">
+				<div>
+					<h2>Background parallax</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-three" anim-pause="500" anim-speed=".2" data-nav="3">
+			<img class="bg animate" src="images/ux_synergy.jpg.jpeg" anim-detached="true" />
+			<div class="story-centered">
+				<div>
+					<h2>Background parallax</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. 
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-four" data-nav="4">
+			<img class="bg animate" src="images/idea-studio.jpg" anim-detached="true" />
+			<div class="story">
+				<div>
+					<h2>Background parallax</h2>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Phasellus nec hendrerit neque.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-five" data-nav="5" anim-pause="500">
+			<ul class="slide slide-1 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-0.jpg"></li><li><img src="images/nike/thumb-1.jpg"></li><li><img src="images/nike/thumb-2.jpg"></li><li><img src="images/nike/thumb-3.jpg"></li><li><img src="images/nike/thumb-4.jpg"></li><li><img src="images/nike/thumb-5.jpg"></li><li><img src="images/nike/thumb-6.jpg"></li><li><img src="images/nike/thumb-7.jpg"></li><li><img src="images/nike/thumb-8.jpg"></li><li><img src="images/nike/thumb-0.jpg"></li><li><img src="images/nike/thumb-1.jpg"></li><li><img src="images/nike/thumb-2.jpg"></li><li><img src="images/nike/thumb-3.jpg"></li><li><img src="images/nike/thumb-4.jpg"></li><li><img src="images/nike/thumb-5.jpg"></li><li><img src="images/nike/thumb-6.jpg"></li><li><img src="images/nike/thumb-7.jpg"></li><li><img src="images/nike/thumb-8.jpg"></li>
+			</ul>
+			<ul class="slide slide-2 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-9.jpg" ></li><li><img src="images/nike/thumb-10.jpg"></li><li><img src="images/nike/thumb-11.jpg"></li><li><img src="images/nike/thumb-12.jpg"></li><li><img src="images/nike/thumb-13.jpg"></li><li><img src="images/nike/thumb-14.jpg"></li><li><img src="images/nike/thumb-15.jpg"></li><li><img src="images/nike/thumb-16.jpg"></li><li><img src="images/nike/thumb-17.jpg"></li><li><img src="images/nike/thumb-9.jpg" ></li><li><img src="images/nike/thumb-10.jpg"></li><li><img src="images/nike/thumb-11.jpg"></li><li><img src="images/nike/thumb-12.jpg"></li><li><img src="images/nike/thumb-13.jpg"></li><li><img src="images/nike/thumb-14.jpg"></li><li><img src="images/nike/thumb-15.jpg"></li><li><img src="images/nike/thumb-16.jpg"></li><li><img src="images/nike/thumb-17.jpg"></li>
+			</ul>
+			<ul class="slide slide-3 animate" anim-detached="true">
+				<li><img src="images/nike/thumb-18.jpg"></li><li><img src="images/nike/thumb-19.jpg"></li><li><img src="images/nike/thumb-20.jpg"></li><li><img src="images/nike/thumb-21.jpg"></li><li><img src="images/nike/thumb-22.jpg"></li><li><img src="images/nike/thumb-23.jpg"></li><li><img src="images/nike/thumb-24.jpg"></li><li><img src="images/nike/thumb-25.jpg"></li><li><img src="images/nike/thumb-26.jpg"></li><li><img src="images/nike/thumb-18.jpg"></li><li><img src="images/nike/thumb-19.jpg"></li><li><img src="images/nike/thumb-20.jpg"></li><li><img src="images/nike/thumb-21.jpg"></li><li><img src="images/nike/thumb-22.jpg"></li><li><img src="images/nike/thumb-23.jpg"></li><li><img src="images/nike/thumb-24.jpg"></li><li><img src="images/nike/thumb-25.jpg"></li><li><img src="images/nike/thumb-26.jpg"></li>
+			</ul>
+
+			<div class="story">
+					<img class="logo animate" src="images/mrm-is-idea-studio.svg" anim-detached="true" width="200" height="68" />				<div>
+					<h2>MRM is Idea Studio</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula aliquam eros a tempus. Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Quisque et urna lacus.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="story-six" anim-pause="500" data-nav="6">
+			<div class="story">
+				<h2>Misc. Stuff</h2>
+				<p>Some more parallax stuff.</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

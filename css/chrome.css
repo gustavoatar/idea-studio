@@ -1,0 +1,138 @@
+body {
+	width  : 100%;
+	height : 100%;
+}
+
+body {
+	margin      : 0px;
+	padding     : 0px;
+	overflow-x  : hidden;
+}
+
+#content {
+	position : fixed;
+	top      : 0px;
+	left     : 0px;
+	width    : 100%;
+	height   : 100%;
+}
+
+a { 
+	color           : #6C6;
+	text-decoration : none;
+}
+
+a:hover {
+	text-decoration : underline;
+}
+
+p {
+	margin      : 0 0 20px 0;
+	font-size   : 13px;
+	line-height : 24px;
+}
+
+p, ul {
+	font-style       : normal;
+	list-style       : none;
+}
+
+#header ul li {
+	width      : 325px;
+	height     : 50px;
+	float      : left;
+	text-align : center;
+}
+
+#header ul {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+h3.caseStudy {
+	cursor : pointer;
+}
+
+.video {
+	overflow : hidden;
+}
+
+
+section {
+	min-height : 500px;
+	min-height : 100%;
+	width      : 100%;
+	position   : absolute;
+	overflow   : hidden;
+	visibility : hidden;
+}
+
+section .story {
+	position      : relative;
+	z-index       : 1;
+	width         : 500px;
+	margin        : 20px auto 0 auto;
+}
+
+section .story-centered {
+	position      : relative;
+	z-index       : 1;
+    vertical-align: middle;
+    width: 80%;
+    text-align: center;
+    margin: 200px auto;	
+}
+
+div.caption {
+	padding-bottom : 30px;
+	font-size      : 13px;
+}
+
+/* default section show / hide animations */
+section.start {
+	top : 100%;
+}
+
+section.focus, section.to {
+	bottom : 0%;
+}
+
+section.end {
+	bottom : 100%;
+}
+
+/* default background image animation */
+
+section .bg {
+	position : absolute;
+	left     : 0px;
+	top      : 0%;
+}
+
+section .bg.start {
+	top : -50%;
+}
+
+section .bg, section .bg.focus, section .bg.to {
+	top : 0%;
+}
+
+section .bg.end {
+	top : 50%;
+}
+
+#fancybox-left #fancybox-left-ico {
+	left : -40px;
+}
+
+#fancybox-right #fancybox-right-ico {
+	left  : auto;
+	right : -40px;
+}
+
+.video-js-box.vjs-fullscreen {
+	height : auto !important;
+}

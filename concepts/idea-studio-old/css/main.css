@@ -1,0 +1,326 @@
+/* ==========================================================================
+   Added Utilities
+   ========================================================================== */
+
+/* CLOSE X ANIMATION */
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); 
+   	-webkit-transform: rotate(45deg); 
+  transform-origin: 10% 10%;
+  -ms-transform-origin:10% 10%;
+  -webkit-transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); 
+   	-webkit-transform: rotate(-45deg); 
+  transform-origin: 10% 90%;
+  -ms-transform-origin:10% 90%;
+  -webkit-transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+  -ms-transform: rotate(0); 
+   	-webkit-transform: rotate(0); 
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+  -ms-transform: rotate(0); 
+   	-webkit-transform: rotate(0); 
+}
+/* webkit font smoothing */
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html { -webkit-font-smoothing: antialiased; }
+/* force html tag scrolling on short pages */
+html { overflow-y: scroll; }
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+
+/* ==========================================================================
+    Custom Design
+   ========================================================================== */
+
+
+html, body {
+	font-family: 'DINNextRoundedLTPro-Light', sans-serif;	
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 26px; }
+
+h3 { font-size: 22px; }
+
+h1, h2, h3 {
+    font-family: 'DINNextRoundedLTPro-Bold', sans-serif;	
+}
+
+h4, h5, h6 {
+		font-family: 'DINNextRoundedLTPro-Medium', sans-serif;
+}
+
+.purple-text { color: #4f2d7f; }
+
+p {
+	font-family: 'DINNextRoundedLTPro-Light', sans-serif;	
+}
+
+p.lead {
+	font-size: 28px; 
+}
+
+.white { color: white; }
+.black { color: black; }
+
+.navbar-brand { 
+	font-size: 24px; 
+	padding: 4px 0; 
+	margin: 0 20px; 
+}
+
+.circle { border-radius: 50%; }
+
+.back-to-top { position: fixed; bottom: 20px; right: 80px; opacity: 0; background: #000; height: 28px; line-height: 30px; display: block; padding: 0 7px 0 7px; }
+
+.back-to-top.showme { opacity: 1.0; }
+
+.navbar-nav>li>.top-cta{ 
+	margin-top: 9px;
+}
+
+#navbar { z-index: 9997; }
+
+#menu {
+ float: right; 	
+}
+
+.no-padding {
+	padding: 0; 
+}
+
+/* body background */
+body {
+  background: #add9e4;
+  background: -moz-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a32d7f), color-stop(100%, #4f2d7f));
+  background: -webkit-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -o-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: -ms-radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background: radial-gradient(center, circle cover, #a32d7f 0%, #4f2d7f 100%);
+  background-color: #4f2d7f;
+  color: #fff;   
+  font-size: 19px;
+}
+
+/* main content well */
+.main-content {
+	margin-top: 50px; 
+}
+
+/* links */
+
+a { 
+	color: #f0ab00;
+}
+
+a:hover {
+	color: #d89a00;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;	
+	height: 60px; 
+	padding-top: 4px 15px 0 15px;
+	z-index:9997;
+}
+
+footer img { margin-top: 8px; }
+
+/* Off Canvas Form */
+
+.off-canvas {
+	position: absolute;
+	top: -1000px;
+	left: 50%;
+	margin-left: -160px;
+	width: 320px;
+	z-index: 9999; 	
+}
+
+.off-canvas.fadeInUp{
+	top: 100px;
+}
+
+.white-bk {
+	positin: absolute; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,255,255,.5);
+	z-index:9998;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.white-bk.fadeIn{
+	opacity: 1;
+}
+
+.form-box{ 
+	background: #fff; 
+	-webkit-box-shadow: 0 2px 20px 10px rgba(0,0,0,.2);
+	box-shadow: 0 2px 20px 10px rgba(0,0,0,.2);	
+	padding: 20px; 
+	color: #f0ab00;
+}
+
+/* the vault */
+
+.the-idea-vault.supressed {
+    width: 140px;
+    top: 50%;
+    bottom: auto;
+    height: 40px;
+    opacity: 1;
+	background: rgba(255,255,255,.1);	
+	transition: all .4s ease-in;
+    right: 50%;
+    left: 50%;
+    z-index: 0;
+	opacity: 0;
+}
+
+.the-idea-vault {
+	position: absolute; 
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0; 
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(163,45,127,1.00);
+	z-index:9999;
+	opacity: 1;
+	transition: all .4s ease-in;		
+
+}
+
+/* line and dots */
+
+.line-holder{
+	position: fixed;
+	width: 30px;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 30px;
+	margin-left: -15px;
+	z-index: 10;
+}
+
+.line {
+	background: #fff;
+	width: 4px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.line-slide {
+	content:"";
+	background:#a32d7f;
+	width: 2px;
+	margin: 0 auto;	
+	z-index: 400;
+	display:block;
+	height: 1%;
+	transition: all .4s ease-in;	
+}
+
+.line-slide.one{ height: 12.5%; transition: height .8s ease-out; }
+
+.line-slide.two{ height: 25%; transition: height .8s ease-out; }
+
+.dot {
+	background: #fff;
+	color: #000;
+	border-radius: 50%;
+	text-align:center;
+	line-height: 30px;
+	position: absolute;
+	top: 12.5%;
+	left: 50%;
+	transition:all .4s ease-in-out;	
+}
+
+.dot.two {
+	top: 25%;
+}
+
+.dot.larger {
+	width: 30px;
+	height: 30px;
+	opacity: 1;	
+	margin-left: -15px;	
+	transition:all .4s ease-in-out;
+}
+
+.dot.tiny {
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	margin: 0;
+	transition:all .4s ease-in-out;
+}
+
+/* Media Queries */
+
+/* Portrait and Landscape iPhone 4, 5, 6 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px) {
+	h1 { font-size: 22px; }
+	
+	h2 { font-size: 18px; }
+	
+	h3 { font-size: 16px; }
+	
+	p,body,html { font-size: 16px; }
+	
+	p.lead { font-size: 18px; }
+	
+	#menu {
+	 float: none; 	
+	}
+	
+	footer img { display: none; }
+}

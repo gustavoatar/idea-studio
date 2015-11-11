@@ -1,0 +1,35 @@
+@font-face {
+		font-family: 'DINNextRoundedLTPro-Medium';
+		src: url('../fonts/dnrmed.eot');
+		src: url('../fonts/dnrmed.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/dnrmed.woff') format('woff'),
+				 url('../fonts/dnrmed.ttf') format('truetype'),
+				 url('../fonts/dnrmed.svg#DINNextRoundedLTPro-Medium') format('svg');
+		font-weight: normal;
+		font-style: normal;
+		
+}
+
+@font-face {
+		font-family: 'DINNextRoundedLTPro-Bold';
+		src: url('../fonts/dnrbold.eot');
+		src: url('../fonts/dnrbold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/dnrbold.woff') format('woff'),
+				 url('../fonts/dnrbold.ttf') format('truetype'),
+				 url('../fonts/dnrbold.svg#DINNextRoundedLTPro-Bold') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+	
+	
+@font-face {
+		font-family: 'DINNextRoundedLTPro-Light';
+		src: url('../fonts/dnrlight.eot');
+		src: url('../fonts/dnrlight.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/dnrlight.woff') format('woff'),
+				 url('../fonts/dnrlight.ttf') format('truetype'),
+				 url('../fonts/dnrlight.svg#DINNextRoundedLTPro-Light') format('svg');
+		font-weight: normal;
+		font-style: normal;
+		
+}
